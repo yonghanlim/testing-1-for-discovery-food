@@ -1,0 +1,168 @@
+footer {
+    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    bottom: 0;
+    position:fixed;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 100;
+  }
+
+  .container{
+    width: 90%;
+    margin: auto;
+    overflow :auto
+  }
+  
+  #main-header{
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255)
+  }
+  
+  #navbar{
+    background-color: black;
+    color :#fff;
+  }
+  
+  #navbar ul{
+    padding:0;
+  }
+  
+  #navbar li{
+    display :inline
+  }
+  
+  #navbar a{
+    color:#fff;
+    text-decoration: aliceblue;
+    font-size: 18px;
+    padding-right: 15px;
+  }
+
+.left{
+    float: left;
+}
+  
+.right{
+    float: right;
+}
+
+body{
+    background-color: rgb(252, 246, 207);
+    color:rgb(0, 0, 0);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+  }
+
+  #showcase{
+    background-image: url(roti-canai-featured-image.jpeg);
+    background-position :center;
+    background-size:cover;
+    min-height: 300px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+
+  #roticanai{
+    margin: auto;
+    overflow :auto
+  }
+
+  #title{
+    width: 90%;
+    margin: auto;
+    overflow :auto;
+    text-decoration: underline;
+  }
+
+  #heading1{
+    width: 90%;
+    margin: auto;
+    overflow :auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  #content1{
+    width: 90%;
+    margin: auto;
+    overflow :auto;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+  }
+
+  #heading2{
+    width: 90%;
+    margin: auto;
+    overflow :auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  #content2{
+    width: 90%;
+    margin: auto;
+    overflow :auto;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;s
+  }
+
+  #heading3{
+    width: 90%;
+    margin: auto;
+    overflow :auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  #content3{
+    width: 90%;
+    margin: auto;
+    overflow :auto;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+  }
+
+  #title2{
+    width: 90%;
+    margin: auto;
+    overflow :auto;
+    text-decoration: underline;
+  }
+
+  #a{
+    width: 90%;
+    margin: auto;
+    overflow :auto;
+    font-size: 15px;
+  }
+
+  #b{
+    width: 90%;
+    margin: auto;
+    overflow :auto;
+    font-size: 15px;
+  }
+
+  #c{
+    width: 90%;
+    margin: auto;
+    overflow :auto;
+    font-size: 15px;
+  }
+
+  #d{
+    width: 90%;
+    margin: auto;
+    overflow :auto;
+    font-size: 15px;
+  }
+
+  #e{
+    width: 90%;
+    margin: auto;
+    overflow :auto;
+    font-size: 15px;
+  }

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Food Discovery @ Penang - Subscribe Form</title>
+		<link rel="stylesheet" type="text/css" href="style3.css">
+		<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/15851/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+	</head>
+	<body>
+		<header id="main-header">
+			<div class="container">
+				<img src="Discover.png" alt="Logo Of Discover Penang" width="190" height="125"> 
+				<h1 style = font-size: 300px></h1>
+			</div>
+		</header>
+		<div class ="grab">
+			<nav id="navbar">
+				<div class="container">
+					<div class="left">
+						<ul>
+							<li><a href = Food.html>Home</a></li>
+							<li><a href = Hokkien-Mee-Discovery.html>Hokkien Mee</a></li>
+							<li><a href = Roti-Canai-Discovery.html>Roti Canai</a></li>
+							<li><a href = #>xxx</a></li>
+						</ul>
+					</div>
+					<div class="right">
+						<ul>
+							<li><a href= subscribe-form.html>Subscribe Us Now!</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+			<div class="testbox">
+				<div class="main-block">
+					<form id="myForm">
+					  <fieldset>
+						<legend>
+						  <h3>Subscribe Details</h3>
+						</legend>
+						<div  class="account-details">
+						  <div><label>Gmail Account :</label><input type="text" name="Your Gmail Account :" required ></div>
+						  <div><label>Repeat Again :</label><input type="text" name="Repeat Your Gmail Account :" required ></div>
+						</div>
+					  </fieldset>
+					  <fieldset>
+						<legend>
+						  <h3>Personal Details</h3>
+						</legend>
+						<div  class="personal-details">
+						  <div>
+							<div><label>Name :</label><input type="text" name="Your Name :"required ></div>
+							<div><label>Your Age :</label><input type="number" name="Your Age :"required ></div>
+							<div>
+							  <label>Gender :</label>
+							  <div class="gender"required >
+								<input type="radio" value="male" id="male" name="Your Gender :"/>
+								<label for="male" class="radio">Male</label>
+								<input type="radio" value="female" id="female" name="Your Gender :"/>
+								<label for="female" class="radio">Female</label>
+							  </div>
+							</div>
+							<div>
+							  <label>Country :</label>              
+							  <select name = "Country :"required >
+								<option value="Malaysia">Malaysia</option>
+								<option value="Singapore">Singapore</option>
+								<option value="Indonesia">Indonesia</option>
+								<option value="Thailand">Thailand</option>
+								<option value="Vietnam">Vietnam</option>
+								<option value="Laos">Laos</option>
+								<option value="Cambodia">Cambodia</option>
+								<option value="Philippines">Philippines</option>
+								<option value="China">China</option>
+								<option value="Mongolia">Mongolia</option>
+								<option value="Taiwan">Taiwan</option>
+								<option value="Australia">Australia</option>
+								<option value="Russia">Russia</option>
+								<option value="The U.S.">The U.S.</option>
+								<option value="Europe">Europe</option>
+								<option value="The U.K.">The U.K.</option>
+								<option value="Mexico">Mexico</option>
+								<option value="India">India</option>
+								<option value="Mexico">Mexico</option>
+								<option value="Japan">Japan</option>
+								<option value="South Korea">South Korea</option>
+								<option value="Myanmar">Myanmar</option>
+								<option value="Lebanon">Lebanon</option>
+								<option value="Yemen">Yemen</option>
+								<option value="Nepal">Nepal</option>
+								<option value="New Zealand">New Zealand</option>
+							  </select>
+							</div>
+						  </div>
+						</div>
+					  </fieldset>
+					  <fieldset>
+						<legend>
+						  <h3>Mailing</h3>
+						</legend>
+						<div  class="terms-mailing">
+						  <div class="checkbox">
+							<input type="checkbox" name="Want To Receive Mailing?"required ><span>I want to recelve personallzed offers by your site</span>
+						  </div>
+					  </fieldset>
+					  <p>Kindly wait for a while after you press the submit button. There will be a pop out notice when you success subscribe us. Thank you.</p>
+					</form>
+					</div> 
+			  </div>
+			  <button onclick='SubForm()'>Submit</button>
+		</div>
+
+	</body>
